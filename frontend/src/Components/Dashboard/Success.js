@@ -9,7 +9,7 @@ const Success = () => {
         const donorCNIC = localStorage.getItem('cnic');
     
         // API endpoint URL
-        const apiUrl = `http://localhost:3000/beneficiary/donated/${beneficiaryId}`;
+        const apiUrl = `https://kindheartcharity.onrender.com/beneficiary/donated/${beneficiaryId}`;
     
         // Update donor_cnic and status via API call
         const updateDonationStatus = async () => {

@@ -9,7 +9,7 @@ const NeedsTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/beneficiary/pending');
+        const response = await fetch('https://kindheartcharity.onrender.com/beneficiary/pending');
         if (!response.ok) {
           throw new Error('Network response was not ok.');
         }
@@ -29,7 +29,7 @@ const NeedsTable = () => {
   const handleDonate = async (amountNeeded) => {
 
     try {
-      const response = await fetch(`http://localhost:3000/payment/donate/${amountNeeded}`, {
+      const response = await fetch(`https://kindheartcharity.onrender.com/payment/donate/${amountNeeded}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

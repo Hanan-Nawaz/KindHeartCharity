@@ -29,7 +29,7 @@ const AddBeneficiary = () => {
     e.preventDefault();
 
     try {
-        const response = await fetch('http://localhost:3000/beneficiary/create', {
+        const response = await fetch('https://kindheartcharity.onrender.com/beneficiary/create', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

@@ -16,7 +16,7 @@ const Profile = () => {
         const cnic = localStorage.getItem('cnic');
 
       try {
-        const response = await fetch(`http://localhost:3000/user/profile/${cnic}`);
+        const response = await fetch(`https://kindheartcharity.onrender.com/user/profile/${cnic}`);
         const userData = await response.json();
         setUserData(userData.user);
         console.log(userData)
@@ -37,7 +37,7 @@ const Profile = () => {
     const cnic = localStorage.getItem('cnic');
 
     try {
-      const response = await fetch(`http://localhost:3000/user/profile/${cnic}`, {
+      const response = await fetch(`https://kindheartcharity.onrender.com/user/profile/${cnic}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

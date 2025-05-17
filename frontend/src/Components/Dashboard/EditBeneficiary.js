@@ -15,7 +15,7 @@ const EditBeneficiary = () => {
   useEffect(() => {
     const fetchBeneficiaryDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/beneficiary/view/id/${id}`);
+        const response = await fetch(`https://kindheartcharity.onrender.com/beneficiary/view/id/${id}`);
         if (!response.ok) {
           throw new Error('Network response was not ok.');
         }
@@ -43,7 +43,7 @@ const EditBeneficiary = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:3000/beneficiary/edit/${id}`, {
+      const response = await fetch(`https://kindheartcharity.onrender.com/beneficiary/edit/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
