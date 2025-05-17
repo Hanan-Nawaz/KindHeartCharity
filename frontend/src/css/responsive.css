@@ -1,0 +1,281 @@
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (min-width: 1600px) {
+    .featured-block {
+      min-height: inherit;
+    }
+  
+    .volunteer-section::after {
+      width: 450px;
+      height: 450px;
+    }
+    
+    .volunteer-image {
+      width: 350px;
+      height: 350px;
+    }
+  }
+  
+  @media screen and (max-width: 1170px) {
+    #carousel-slide .carousel-image {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    h1 {
+      font-size: 42px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+  
+    h3 {
+      font-size: 32px;
+    }
+  
+    h4 {
+      font-size: 28px;
+    }
+  
+    h5 {
+      font-size: 20px;
+    }
+  
+    h6 {
+      font-size: 18px;
+    }
+  
+    .section-padding {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    .carousel-form {
+      padding-bottom: 40px;
+    }
+  
+    .donate-form {
+      padding: 35px;
+    }
+  
+    .navbar {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  
+    .navbar-expand-lg .navbar-nav {
+      padding-bottom: 30px;
+    }
+  
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding: 8px 20px;
+    }
+  
+    .site-header .social-icon {
+      text-align: left;
+      margin-top: 5px;
+    }
+  
+    .carousel-section-full-height {
+      height: inherit;
+    }
+  
+    .carousel:hover .carousel-control-next-icon, 
+    .carousel:hover .carousel-control-prev-icon {
+      opacity: 1;
+    }
+  
+    #carousel-slide .carousel-item {
+      height: inherit;
+    }
+  
+    .carousel-control-prev {
+      left: 12px;
+    }
+  
+    .carousel-control-next {
+      right: 12px;
+    }
+  
+    .carousel-control-next-icon, 
+    .carousel-control-prev-icon {
+      opacity: 1;
+      width: 60px;
+      height: 60px;
+    }
+  
+    .news-detail-header-section {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  
+    .cta-section::before {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .cta-section::after {
+      bottom: -60px;
+      width: 100px;
+      height: 100px;
+    }
+  
+    .cta-section .row {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    .volunteer-section::after {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .testimonial-section::before {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .testimonial-section::after {
+      width: 200px;
+      height: 200px;
+    }
+  
+    #testimonial-carousel .carousel-caption {
+      padding-top: 0;
+    }
+  
+    blockquote {
+      padding: 70px 30px 30px 30px;
+    }
+  
+    .about-image {
+      width: inherit;
+      height: 450px;
+    }
+  
+    .volunteer-image {
+      width: 250px;
+      height: 250px;
+      margin: 0;
+    }
+  
+    .custom-text-block {
+      padding: 20px 0 0 0;
+    }
+  
+    .custom-text-box,
+    .volunteer-form {
+      padding: 30px;
+    }
+  
+    .counter-number, 
+    .counter-number-text {
+      font-size: var(--h2-font-size);
+    }
+  
+    .contact-info-wrap {
+      padding-top: 0;
+    }
+  
+    .site-footer {
+      padding-top: 50px;
+    }
+  
+    .copyright-text-wrap {
+      justify-content: center;
+    }
+  
+    .site-footer-bottom {
+      text-align: center;
+      margin-top: 50px;
+    }
+  
+    .site-footer-bottom .footer-menu {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 580px) {
+    .carousel-section-full-height,
+    #carousel-slide .carousel-item,
+    .carousel-image {
+      min-height: 520px;
+    }
+  
+    #carousel-slide .carousel-caption {
+      clip-path: polygon(100% 100%, 100% 100px, 0 100%);
+      padding-right: 50px;
+      min-width: inherit;
+      min-height: inherit;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 40px;
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  
+    h3 {
+      font-size: 26px;
+    }
+  
+    h4 {
+      font-size: 22px;
+    }
+  
+    h5 {
+      font-size: 20px;
+    }
+  
+    #carousel-slide .carousel-caption {
+      min-width: inherit;
+      padding-bottom: 30px;
+    }
+  
+    .carousel-control-next-icon, 
+    .carousel-control-prev-icon {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .volunteer-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .volunteer-section::after {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .testimonial-section::before {
+      top: -50px;
+      width: 100px;
+      height: 100px;
+    }
+  
+    .testimonial-section::after {
+      bottom: -150px;
+      width: 200px;
+      height: 200px;
+    }
+  
+    .social-share .tags-block {
+      margin-bottom: 10px;
+    }
+  
+    .donate-form {
+      padding: 25px;
+    }
+  }
+  

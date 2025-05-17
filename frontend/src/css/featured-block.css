@@ -1,0 +1,38 @@
+
+/*---------------------------------------
+  FEATURE BLOCK              
+-----------------------------------------*/
+.featured-block {
+    text-align: center;
+    transition: all 0.5s ease;
+    min-height: 256px;
+    padding: 15px;
+  }
+  
+  .featured-block:hover {
+    background: var(--white-color);
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  }
+  
+  .featured-block:hover .featured-block-image {
+    transform: scale(0.75);
+  }
+  
+  .featured-block-image {
+    display: block;
+    margin: auto;
+    transition: all 0.5s;
+  }
+  
+  .featured-block:hover .featured-block-text {
+    margin-top: 0;
+  }
+  
+  .featured-block-text {
+    color: var(--primary-color);
+    font-size: var(--h5-font-size);
+    margin-top: 20px;
+    transition: all 0.5s;
+  }
+  

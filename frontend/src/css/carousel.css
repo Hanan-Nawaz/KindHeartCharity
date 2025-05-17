@@ -1,0 +1,74 @@
+
+/*---------------------------------------
+  carousel & carousel SLIDE         
+-----------------------------------------*/
+.carousel-section-full-height {
+    height: 680px;
+    min-height: 680px;
+    position: relative;
+  }
+  
+  .carousel:hover .carousel-control-next-icon, 
+  .carousel:hover .carousel-control-prev-icon {
+    opacity: 1;
+  }
+  
+  #carousel-slide .carousel-item {
+    height: 680px;
+    min-height: 680px;
+  }
+  
+  #carousel-slide .carousel-caption {
+    background: var(--white-color);
+    clip-path: polygon(100% 100%, 100% 150px, 0 100%);
+    color: var(--secondary-color);
+    top: 1px;
+    bottom: -1px;
+    right: 0;
+    left: auto;
+    text-align: right;
+    min-width: 680px;
+    min-height: 680px;
+    padding: 100px 100px 50px 100px;
+  }
+  
+  .carousel-image {
+    display: block;
+    width: 100%;
+    min-height: 680px;
+  }
+  
+  #carousel-slide .carousel-indicators-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  #carousel-slide .carousel-indicators {
+    margin-right: 0;
+    margin-left: 22px;
+    justify-content: inherit;
+  }
+  
+  .carousel-control-next, 
+  .carousel-control-prev {
+    opacity: 1;
+  }
+  
+  .carousel-control-next-icon, 
+  .carousel-control-prev-icon {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-large);
+    background-size: 60% 60%;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .carousel-control-next-icon:hover, 
+  .carousel-control-prev-icon:hover {
+    background-color: var(--primary-color);
+  }
+  

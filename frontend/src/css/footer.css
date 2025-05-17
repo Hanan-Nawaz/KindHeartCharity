@@ -1,0 +1,33 @@
+
+/*---------------------------------------
+  SITE FOOTER              
+-----------------------------------------*/
+
+  
+  .site-footer-bottom {
+    background-color: var(--secondary-color);
+    position: relative;
+    z-index: 2;
+    margin-top: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .site-footer-bottom a {
+      color: var(--white-color);
+  }
+  
+  .site-footer-bottom a:hover {
+      color: #FF6;
+  }
+  
+  .site-footer-link {
+    color: var(--white-color);
+  }
+  
+  .copyright-text {
+    color: var(--section-bg-color);
+    font-size: var(--copyright-font-size);
+    margin-right: 30px;
+  }
+  
