@@ -11,7 +11,7 @@ const History = () => {
       try {
         const cnic =  localStorage.getItem('cnic');
 
-        const response = await fetch(`https://kindheartcharity.onrender.com/beneficiary/paid/${cnic}`);
+        const response = await fetch(`https://kindheartcharity.onrender.com:10000/beneficiary/paid/${cnic}`);
         if (!response.ok) {
           throw new Error('Network response was not ok.');
         }
