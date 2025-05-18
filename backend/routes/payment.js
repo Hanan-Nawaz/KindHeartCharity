@@ -23,8 +23,8 @@ router.get('/donate/:price', async (req, res) => {
       },
     ],
     mode: 'payment',
-    success_url: 'http://localhost:3001/main/success', 
-    cancel_url: 'http://localhost:3001/main/dashboard', 
+    success_url: 'https://khcharity.netlify.app/main/success', 
+    cancel_url: 'https://khcharity.netlify.app/main/dashboard', 
   });
 
   res.json({ sessionId: session.url });
