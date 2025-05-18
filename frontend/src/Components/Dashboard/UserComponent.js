@@ -6,7 +6,7 @@ const UserComponent = () => {
 
   const fetchUser = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/user/get`);
+      const response = await fetch(`https://kindheartcharity.onrender.com/user/get`);
       if (!response.ok) {
         throw new Error('Network response was not ok.');
       }
@@ -29,7 +29,7 @@ const UserComponent = () => {
 
   const updateUserStatus = async (newStatus, storedCnic) => {
     try {
-      const response = await fetch(`http://localhost:3000/user/update/${storedCnic}`, {
+      const response = await fetch(`https://kindheartcharity.onrender.com/user/update/${storedCnic}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
