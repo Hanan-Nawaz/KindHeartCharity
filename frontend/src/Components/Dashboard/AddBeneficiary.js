@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const AddBeneficiary = () => {
   const volunteerCnic = localStorage.getItem('cnic');
-
 
   const [formData, setFormData] = useState({
     volunteer_cnic: volunteerCnic,
@@ -29,7 +27,7 @@ const AddBeneficiary = () => {
     e.preventDefault();
 
     try {
-        const response = await fetch('https://kindheartcharity.onrender.com/beneficiary/create', {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/beneficiary/create`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

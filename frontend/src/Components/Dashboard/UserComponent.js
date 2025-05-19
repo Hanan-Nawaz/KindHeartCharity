@@ -29,7 +29,7 @@ const UserComponent = () => {
 
   const updateUserStatus = async (newStatus, storedCnic) => {
     try {
-      const response = await fetch(`https://kindheartcharity.onrender.com/user/update/${storedCnic}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/user/update/${storedCnic}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

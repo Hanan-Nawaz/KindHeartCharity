@@ -37,7 +37,7 @@ const Profile = () => {
     const cnic = localStorage.getItem('cnic');
 
     try {
-      const response = await fetch(`https://kindheartcharity.onrender.com/user/profile/${cnic}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/user/profile/${cnic}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
