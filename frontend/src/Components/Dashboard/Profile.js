@@ -32,12 +32,13 @@ const Profile = () => {
   const handleEditClick = () => {
     setEditable(true);
   };
+  const api_base = process.env.REACT_APP_API_URL;
 
   const handleSaveClick = async () => {
     const cnic = localStorage.getItem('cnic');
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/user/profile/${cnic}`, {
+      const response = await fetch(`${api_base}/user/profile/${cnic}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

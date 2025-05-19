@@ -5,11 +5,12 @@ import React, { useState, useEffect } from 'react';
 const NeedsTable = () => {
   const [beneficiaries, setBeneficiaries] = useState([]);
   const [loading, setLoading] = useState(true);
+  const api_base = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/beneficiary/pending`);
+        const response = await fetch(`${api_base}/beneficiary/pending`);
         if (!response.ok) {
           throw new Error('Network response was not ok.');
         }

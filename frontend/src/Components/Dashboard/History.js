@@ -5,13 +5,14 @@ import React, { useState, useEffect } from 'react';
 const History = () => {
   const [beneficiaries, setBeneficiaries] = useState([]);
   const [loading, setLoading] = useState(true);
+  const api_base = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const cnic =  localStorage.getItem('cnic');
 
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/beneficiary/paid/${cnic}`);
+        const response = await fetch(`${api_base}/beneficiary/paid/${cnic}`);
         if (!response.ok) {
           throw new Error('Network response was not ok.');
         }

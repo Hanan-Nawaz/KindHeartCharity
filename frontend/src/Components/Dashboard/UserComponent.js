@@ -27,9 +27,11 @@ const UserComponent = () => {
     fetchUser();
   }, []);
 
+    const api_base = process.env.REACT_APP_API_URL;
+
   const updateUserStatus = async (newStatus, storedCnic) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/user/update/${storedCnic}`, {
+      const response = await fetch(`${api_base}/user/update/${storedCnic}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

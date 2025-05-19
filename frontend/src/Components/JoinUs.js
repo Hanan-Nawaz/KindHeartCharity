@@ -3,6 +3,8 @@ import '../css/join-us.css'
 import img from '../imgs/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg'
 
 const JoinUsSection = () => {
+    const api_base = process.env.REACT_APP_API_URL;
+
   const [formData, setFormData] = useState({
     cnic: '',
     password: '',

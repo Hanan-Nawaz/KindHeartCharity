@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../../css/success.css'
 
 const Success = () => {
+  const api_base = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
         // Retrieve beneficiaryId and donorCNIC from local storage
@@ -9,7 +10,7 @@ const Success = () => {
         const donorCNIC = localStorage.getItem('cnic');
     
         // API endpoint URL
-        const apiUrl = `${import.meta.env.VITE_API_URL}/beneficiary/donated/${beneficiaryId}`;
+        const apiUrl = `${api_base}/beneficiary/donated/${beneficiaryId}`;
     
         // Update donor_cnic and status via API call
         const updateDonationStatus = async () => {

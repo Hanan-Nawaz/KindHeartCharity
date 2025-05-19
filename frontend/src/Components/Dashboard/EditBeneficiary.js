@@ -11,11 +11,12 @@ const EditBeneficiary = () => {
   });
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
+  const api_base = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchBeneficiaryDetails = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/beneficiary/view/id/${id}`);
+        const response = await fetch(`${api_base}/beneficiary/view/id/${id}`);
         if (!response.ok) {
           throw new Error('Network response was not ok.');
         }
@@ -43,7 +44,7 @@ const EditBeneficiary = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/beneficiary/edit/${id}`, {
+      const response = await fetch(`${api_base}/beneficiary/edit/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

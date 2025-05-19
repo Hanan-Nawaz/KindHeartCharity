@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const AddBeneficiary = () => {
   const volunteerCnic = localStorage.getItem('cnic');
+  const api_base = process.env.REACT_APP_API_URL;
 
   const [formData, setFormData] = useState({
     volunteer_cnic: volunteerCnic,
@@ -27,7 +28,7 @@ const AddBeneficiary = () => {
     e.preventDefault();
 
     try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/beneficiary/create`, {
+        const response = await fetch(`${api_base}/beneficiary/create`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
