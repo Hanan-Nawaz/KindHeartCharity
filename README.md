@@ -1,5 +1,9 @@
 # KindHeart Charity
 
+![Repository Archived](https://img.shields.io/badge/repository-archived-red)
+
+> This repository is archived and no longer actively maintained.
+
 A community‑driven web application connecting **Admins**, **Volunteers**, and **Donors** to support beneficiaries. Donors contribute via Stripe, Volunteers submit and manage beneficiary requests, and Admins oversee the entire system.
 
 
